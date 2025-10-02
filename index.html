@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>烂笔头计划 - Lanbitou's homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+        }
+        .card {
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 20px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">烂笔头计划</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">关于</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">项目</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="docs/index.html">文档</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">联系</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 mb-4">烂笔头计划</h1>
+            <p class="lead mb-6">记录学习、分享知识、积累经验</p>
+            <div class="d-flex justify-content-center gap-4">
+                <a href="projects.html" class="btn btn-primary btn-lg">浏览项目</a>
+                <a href="docs/index.html" class="btn btn-secondary btn-lg">阅读文档</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能区域 -->
+    <section class="py-16 bg-white">
+        <div class="container">
+            <h2 class="section-title text-center mb-12">项目功能</h2>
+            <div class="row">
+                <div class="col-md-4 mb-8">
+                    <div class="card h-100 shadow-lg">
+                        <div class="card-body text-center">
+                            <div class="mb-4 text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687z"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title mb-3">知识管理</h3>
+                            <p class="card-text">系统性地整理和管理学习笔记、技术文档和项目经验。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-8">
+                    <div class="card h-100 shadow-lg">
+                        <div class="card-body text-center">
+                            <div class="mb-4 text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+                                    <path d="M5.854 4.854a.5.5 0 0 0 0 .708L7.97 7.5l-2.116 2.142a.5.5 0 1 0 .707.708l2.22-2.24 2.22 2.24a.5.5 0 0 0 .707-.708L9.39 7.5l2.116-2.142a.5.5 0 0 0-.707-.708L8.683 7.207 6.564 5.086a.5.5 0 0 0-.708 0z"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title mb-3">代码示例</h3>
+                            <p class="card-text">提供各种编程语言的代码示例、工具和实用程序。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-8">
+                    <div class="card h-100 shadow-lg">
+                        <div class="card-body text-center">
+                            <div class="mb-4 text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title mb-3">开源项目</h3>
+                            <p class="card-text">分享和维护开源项目，促进技术交流和共同进步。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最新项目 -->
+    <section class="py-16 bg-gray-50">
+        <div class="container">
+            <h2 class="section-title text-center mb-12">最新项目</h2>
+            <div class="row">
+                <div class="col-md-6 mb-8">
+                    <div class="card h-100 shadow-lg overflow-hidden">
+                        <img src="https://placehold.co/800x400?text=项目展示图1" class="card-img-top" alt="项目展示图1">
+                        <div class="card-body">
+                            <h3 class="card-title">项目名称 1</h3>
+                            <p class="card-text">这是一个项目的简短描述，介绍项目的主要功能和用途。</p>
+                            <a href="projects/project1.html" class="btn btn-primary">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-8">
+                    <div class="card h-100 shadow-lg overflow-hidden">
+                        <img src="https://placehold.co/800x400?text=项目展示图2" class="card-img-top" alt="项目展示图2">
+                        <div class="card-body">
+                            <h3 class="card-title">项目名称 2</h3>
+                            <p class="card-text">这是另一个项目的简短描述，介绍项目的主要功能和用途。</p>
+                            <a href="projects/project2.html" class="btn btn-primary">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="projects.html" class="btn btn-secondary">查看更多项目</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部区域 -->
+    <footer class="bg-dark text-white py-10">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>烂笔头计划</h4>
+                    <p class="mt-2">记录学习、分享知识、积累经验</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>快速链接</h4>
+                    <ul class="list-unstyled mt-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">首页</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white">关于</a></li>
+                        <li><a href="projects.html" class="text-gray-300 hover:text-white">项目</a></li>
+                        <li><a href="docs/index.html" class="text-gray-300 hover:text-white">文档</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white">联系</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p>&copy; 2023 烂笔头计划. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
