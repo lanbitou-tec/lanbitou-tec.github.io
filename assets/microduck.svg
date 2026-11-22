@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#667eea"/>
+      <stop offset="1" stop-color="#764ba2"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- 鸭子剪影 -->
+  <g transform="translate(400,205)" fill="#ffffff" opacity="0.92">
+    <ellipse cx="0" cy="40" rx="130" ry="62"/>
+    <circle cx="-85" cy="-35" r="48"/>
+    <path d="M-133,-42 L-172,-32 L-133,-20 Z"/>
+    <circle cx="-98" cy="-45" r="5" fill="#764ba2"/>
+    <path d="M60,10 Q110,15 108,52 Q90,68 60,62 Z" opacity="0.55"/>
+  </g>
+  <g text-anchor="middle" fill="#ffffff">
+    <text x="400" y="82" font-size="42" font-weight="bold">MicroDuck 机器鸭复刻</text>
+    <text x="400" y="120" font-size="20" opacity="0.85">泰山派 1M · RK3566 · 双足机器人</text>
+    <text x="400" y="355" font-size="16" opacity="0.75">3D 结构 · 硬件原理图 · 固件 · RL 训练模型</text>
+  </g>
+</svg>
